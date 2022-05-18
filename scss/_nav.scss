@@ -1,0 +1,110 @@
+.navbar {
+	width: 100%;
+	height: 100px;
+}
+
+.navbar_nav {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 25px;
+}
+
+.navbar_logo {
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: capitalize;
+	cursor: pointer;
+}
+
+.navbar_logo_decoration {
+	color: $neon;
+	font-size: 16px;
+}
+
+.navbar_menu_list {
+	list-style: none;
+}
+
+.navbar_menu_list li {
+	display: inline-block;
+	font-size: 16px;
+	text-transform: capitalize;
+	padding: 7px 15px;
+}
+
+.navbar_menu_list li.contact {
+	text-transform: uppercase;
+}
+
+.navbar_menu_list i {
+	vertical-align: middle;
+	padding: 0 3px;
+}
+
+.link,
+.link::after,
+.link::before {
+	transition: 0.3s;
+}
+
+.link {
+	position: relative;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+.link::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 2px;
+	width: 100%;
+	background-color: $neon;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.5s;
+}
+
+.link:hover::after {
+	transform: scaleX(1);
+}
+
+.fb:hover {
+	color: rgb(53, 104, 255);
+	padding-bottom: 1px;
+	transition: color 0.2s;
+}
+
+.ig:hover {
+	color: #e1306c;
+	padding-bottom: 1px;
+	transition: color 0.2s;
+}
+
+.contact {
+	position: relative;
+	transition: color 1s;
+}
+
+.contact::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: $neon;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.5s;
+	z-index: -1;
+}
+
+.contact:hover::after {
+	transform: scaleX(1);
+}
+
+.contact:hover {
+	color: #000;
+}

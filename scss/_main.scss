@@ -1,0 +1,238 @@
+.main {
+	margin-top: 210px;
+	@media screen and (max-width: $small) {
+		margin-top: 200px;
+	}
+}
+
+.section_text {
+	max-width: 700px;
+	margin: 0 auto;
+	text-align: center;
+	@media screen and (max-width: $small) {
+		max-width: 400px;
+	}
+}
+
+.last {
+	@media screen and (max-width: $small) {
+		max-width: 700px;
+	}
+}
+
+.section_text h2 {
+	font-size: 64px;
+	text-transform: capitalize;
+	@media screen and (max-width: $small) {
+		font-size: 48px;
+	}
+}
+
+.section_text p {
+	color: $gray;
+	margin-top: 20px;
+	@media screen and (max-width: $large) {
+		font-size: 24px;
+	}
+	@media screen and (max-width: $small) {
+		font-size:18px;
+	}
+}
+
+.portfolio_container {
+	height: 700px;
+	margin-top: 210px;
+	@media screen and (max-width: $large) {
+		height: 1850px;
+		margin-top: 50px;
+	}
+}
+
+.cards_container_portfolio {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-top: 50px;
+	justify-content: space-between;
+	@media screen and (max-width: $large) {
+		flex-wrap: nowrap;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.card_portfolio {
+	position: relative;
+	height: 400px;
+	width: 375px;
+	background: $dark-gray;
+	text-align: center;
+	@media screen and (max-width: $large) {
+		margin-top: 50px;
+		height: 400px;
+		width: 500px;
+	}
+	@media screen and (max-width: $small) {
+		width: 75%;
+	}
+	h3 {
+		margin-top: 25px;
+		text-transform: capitalize;
+		@media screen and (max-width: $large) {
+			font-size: 32px;
+		}
+	}
+	p {
+		margin-top: 25px;
+		color: $gray;
+		margin-left: 60px;
+		margin-right: 60px;
+		@media screen and (max-width: $large) {
+			font-size: 20px;
+		}
+	}
+	img {
+		margin-top: 25px;
+		width: 300px;
+		height: 250px;
+		@media screen and (max-width: $large) {
+			width: 400px;
+			height: 210px;
+		}
+		@media screen and (max-width: $small) {
+			width: 220px;
+			height: 170px;
+		}
+	}
+}
+
+.card_portfolio:first-of-type::before {
+	content: '';
+	width: 188px;
+	height: 210px;
+	background-color: $neon;
+	position: absolute;
+	left: -10px;
+	top: -10px;
+	z-index: -2;
+}
+
+.card_portfolio:last-of-type::before {
+	content: '';
+	width: 188px;
+	height: 210px;
+	background-color: $neon;
+	position: absolute;
+	bottom: -10px;
+	right: -10px;
+	z-index: -2;
+}
+
+.our-services_container {
+	margin-top: 210px;
+	height: 1200px;
+	@media screen and (max-width: $small) {
+		margin-top: 250px;
+		height: 3000px;
+	}
+}
+
+.cards_container_our-services {
+	display: flex;
+	width: 100%;
+	margin-top: 50px;
+	height: 600px;
+	justify-content: space-between;
+	align-items: space-between;
+	flex-wrap: wrap;
+	@media screen and (max-width: $large) {
+		justify-content: space-around;
+	}
+	@media screen and (max-width: $small) {
+		height: 2500px;
+		margin-top: 100px;
+		flex-wrap: nowrap;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.card_our-services {
+	position: relative;
+	height: 250px;
+	width: 375px;
+	background: $dark-gray;
+	text-align: center;
+	margin-top: 50px;
+	@media screen and (max-width: $large) {
+		width: 29%;
+		height: 350px;
+	}
+	@media screen and (max-width: $small) {
+		height: 500px;
+		width: 75%;
+	}
+	h3 {
+		margin-top: 25px;
+		text-transform: capitalize;
+		@media screen and (max-width: $large) {
+			font-size: 28px;
+		}
+	}
+	p {
+		margin-top: 25px;
+		color: $gray;
+		margin-left: 60px;
+		margin-right: 60px;
+		@media screen and (max-width: $large) {
+			font-size: 20px;
+		}
+	}
+	i {
+		font-size: 48px;
+		color: $neon;
+		margin-top: 25px;
+		@media screen and (max-width: $small) {
+			margin-top: 50px;
+		}
+	}
+}
+
+.card_our-services:first-of-type::before {
+	content: '';
+	width: 188px;
+	height: 210px;
+	background-color: $neon;
+	position: absolute;
+	left: -10px;
+	top: -10px;
+	z-index: -2;
+}
+
+.card_our-services:last-of-type::before {
+	content: '';
+	width: 188px;
+	height: 210px;
+	background-color: $neon;
+	position: absolute;
+	bottom: -10px;
+	right: -10px;
+	z-index: -2;
+}
+
+.technologies {
+	display: flex;
+	height: 200px;
+	justify-content: space-between;
+	margin-top: 210px;
+}
+
+.technologies img {
+	height: 100px;
+	@media screen and (max-width: $large) {
+		height: 75px;
+	}
+	@media screen and (max-width: $small) {
+		height: 50px;
+	}
+}

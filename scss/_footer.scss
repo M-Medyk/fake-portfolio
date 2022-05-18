@@ -1,0 +1,55 @@
+footer {
+	height: 100px;
+	width: 100%;
+	background-color: rgb(10, 10, 10);
+	margin-top: 50px;
+	display: flex;
+	@media screen and (max-width: $small) {
+		display: block;
+		height: 175px;
+		margin-top: 100px;
+	}
+}
+
+.footer_content {
+	color: $gray;
+	display: flex;
+	justify-content: space-between;
+	line-height: 100px;
+	@media screen and (max-width: $small) {
+		height: 100px;
+		font-size: 12px;
+		display: block;
+		text-align: center;
+		line-height: 50px;
+	}
+}
+
+.go_to_up {
+	color: $neon;
+	font-size: 50px;
+	position: absolute;
+	right: 25px;
+	line-height: 100px;
+	@media screen and (max-width: $small) {
+		width: 100%;
+		height: 50px;
+		background-color: rgb(10, 10, 10);
+		line-height: normal;
+	}
+}
+
+.go_to_up a {
+	color: $neon;
+	@media screen and (max-width: $small) {
+		position: absolute;
+		left: 50%;
+	}
+}
+
+.go_to_up:hover {
+	line-height: 90px;
+	@media screen and (max-width: $small) {
+		line-height: normal;
+	}
+}
