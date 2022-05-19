@@ -17,7 +17,7 @@
 }
 
 .navbar_logo_decoration {
-	color: $neon;
+	color: $main-color;
 	font-size: 16px;
 }
 
@@ -60,7 +60,7 @@
 	left: 0;
 	height: 2px;
 	width: 100%;
-	background-color: $neon;
+	background-color: $main-color;
 	transform: scaleX(0);
 	transform-origin: left;
 	transition: transform 0.5s;
@@ -94,7 +94,7 @@
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background-color: $neon;
+	background-color: $main-color;
 	transform: scaleX(0);
 	transform-origin: left;
 	transition: transform 0.5s;

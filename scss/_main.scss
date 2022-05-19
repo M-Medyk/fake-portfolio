@@ -35,7 +35,7 @@
 		font-size: 24px;
 	}
 	@media screen and (max-width: $small) {
-		font-size:18px;
+		font-size: 18px;
 	}
 }
 
@@ -49,15 +49,15 @@
 }
 
 .cards_container_portfolio {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-	margin-top: 50px;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: center;
+	gap: 2rem;
+	margin-top: 150px;
 	@media screen and (max-width: $large) {
-		flex-wrap: nowrap;
-		flex-direction: column;
-		align-items: center;
+		grid-template-columns: 1fr;
+	}
+	@media screen and (max-width: $small) {
 	}
 }
 
@@ -100,8 +100,6 @@
 			height: 210px;
 		}
 		@media screen and (max-width: $small) {
-			width: 220px;
-			height: 170px;
 		}
 	}
 }
@@ -110,7 +108,7 @@
 	content: '';
 	width: 188px;
 	height: 210px;
-	background-color: $neon;
+	background-color: $main-color;
 	position: absolute;
 	left: -10px;
 	top: -10px;
@@ -121,7 +119,7 @@
 	content: '';
 	width: 188px;
 	height: 210px;
-	background-color: $neon;
+	background-color: $main-color;
 	position: absolute;
 	bottom: -10px;
 	right: -10px;
@@ -138,22 +136,16 @@
 }
 
 .cards_container_our-services {
-	display: flex;
-	width: 100%;
-	margin-top: 50px;
-	height: 600px;
-	justify-content: space-between;
-	align-items: space-between;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: center;
+	gap: 2rem;
+	margin-top: 150px;
 	@media screen and (max-width: $large) {
-		justify-content: space-around;
+		grid-template-columns: 1fr 1fr;
 	}
 	@media screen and (max-width: $small) {
-		height: 2500px;
-		margin-top: 100px;
-		flex-wrap: nowrap;
-		flex-direction: column;
-		align-items: center;
+		grid-template-columns: 1fr;
 	}
 }
 
@@ -163,14 +155,12 @@
 	width: 375px;
 	background: $dark-gray;
 	text-align: center;
-	margin-top: 50px;
 	@media screen and (max-width: $large) {
-		width: 29%;
-		height: 350px;
+		height: 300px;
+		width: 350px;
 	}
 	@media screen and (max-width: $small) {
-		height: 500px;
-		width: 75%;
+		height: 350px;
 	}
 	h3 {
 		margin-top: 25px;
@@ -190,7 +180,7 @@
 	}
 	i {
 		font-size: 48px;
-		color: $neon;
+		color: $main-color;
 		margin-top: 25px;
 		@media screen and (max-width: $small) {
 			margin-top: 50px;
@@ -202,7 +192,7 @@
 	content: '';
 	width: 188px;
 	height: 210px;
-	background-color: $neon;
+	background-color: $main-color;
 	position: absolute;
 	left: -10px;
 	top: -10px;
@@ -213,7 +203,7 @@
 	content: '';
 	width: 188px;
 	height: 210px;
-	background-color: $neon;
+	background-color: $main-color;
 	position: absolute;
 	bottom: -10px;
 	right: -10px;

@@ -16,6 +16,7 @@
 	}
 	h2 {
 		text-align: left;
+		text-transform: none;
 	}
 	p {
 		text-align: left;
@@ -42,7 +43,7 @@
 	height: 6px;
 	width: 100%;
 	margin-top: 50px;
-	background-color: $neon;
+	background-color: $main-color;
 }
 
 .test {
@@ -58,7 +59,7 @@
 	height: 50px;
 	margin-top: -25px;
 	border-radius: 50%;
-	background-color: $neon;
+	background-color: $main-color;
 	color: #000;
 	font-size: 18px;
 	font-weight: bold;
@@ -78,7 +79,7 @@
 	position: relative;
 	width: 100px;
 	height: 50px;
-	background-color: $neon;
+	background-color: $main-color;
 	text-transform: uppercase;
 	font-size: 18px;
 	font-weight: bold;

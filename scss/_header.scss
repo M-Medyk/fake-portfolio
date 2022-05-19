@@ -21,7 +21,7 @@
 }
 
 .header_left_side h1 {
-	color: $neon;
+	color: $main-color;
 	font-size: 96px;
 	font-weight: 700;
 	text-transform: capitalize;
@@ -80,7 +80,7 @@
 	content: '';
 	height: 200px;
 	width: 200px;
-	background-color: $neon;
+	background-color: $main-color;
 	position: absolute;
 	bottom: -10px;
 	left: 10px;

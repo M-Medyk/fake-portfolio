@@ -3,7 +3,8 @@
 	width: 100%;
 	margin-top: 250px;
 	display: flex;
-	border-left: 5px solid $neon;
+	border-left: 5px solid $main-color;
+	background-color: $dark-gray;
 	@media screen and (max-width: $small) {
 		flex-direction: column;
 		margin-top: 50px;
@@ -46,7 +47,7 @@
 }
 
 .about-me-right_card {
-	background-color: $dark-gray;
+	border-left: 7px solid black;
 	height: 450px;
 	width: 450px;
 	display: flex;
@@ -64,7 +65,7 @@
 		content: '';
 		height: 300px;
 		width: 300px;
-		background-color: $neon;
+		background-color: $main-color;
 		position: absolute;
 		bottom: -10px;
 		left: 10px;

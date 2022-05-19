@@ -1,5 +1,5 @@
 .border_neon {
-	border: 2px solid $neon;
+	border: 2px solid $main-color;
 }
 
 .wrapper {
@@ -13,7 +13,7 @@
 	width: 50%;
 	position: absolute;
 	left: 50%;
-	border-left: 5px solid $neon;
+	border-left: 5px solid $main-color;
 	@media screen and (max-width: $small) {
 		height: 50px;
 	}
@@ -24,7 +24,7 @@
 	width: 50%;
 	position: absolute;
 	left: 0;
-	border-right: 5px solid $neon;
+	border-right: 5px solid $main-color;
 	@media screen and (max-width: $small) {
 		height: 50px;
 	}
@@ -41,5 +41,5 @@
 }
 
 .text-border-top {
-	border-top: 5px solid $neon;
+	border-top: 5px solid $main-color;
 }

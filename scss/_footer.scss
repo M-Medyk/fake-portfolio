@@ -14,7 +14,7 @@ footer {
 .footer_content {
 	color: $gray;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	line-height: 100px;
 	@media screen and (max-width: $small) {
 		height: 100px;
@@ -26,10 +26,10 @@ footer {
 }
 
 .go_to_up {
-	color: $neon;
+	color: $main-color;
 	font-size: 50px;
 	position: absolute;
-	right: 25px;
+	right: 100px;
 	line-height: 100px;
 	@media screen and (max-width: $small) {
 		width: 100%;
@@ -40,7 +40,7 @@ footer {
 }
 
 .go_to_up a {
-	color: $neon;
+	color: $main-color;
 	@media screen and (max-width: $small) {
 		position: absolute;
 		left: 50%;
